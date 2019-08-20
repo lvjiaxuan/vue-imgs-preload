@@ -11,7 +11,7 @@ export default {
 
     preloadVisible: {
       type: Boolean,
-      default: true
+      require: true
     },
 
     addConditionsNum: {

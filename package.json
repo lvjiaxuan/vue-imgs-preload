@@ -1,6 +1,6 @@
 {
-  "name": "vue-imgs-preload",
-  "version": "0.1.1",
+  "name": "VueImgsPreload",
+  "version": "0.1.2",
   "private": false,
   "author": "lvjiaxuan",
   "scripts": {
