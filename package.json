@@ -1,6 +1,6 @@
 {
   "name": "vue-imgs-preload",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "author": "lvjiaxuan",
   "scripts": {
@@ -8,7 +8,7 @@
     "build": "vue-cli-service build",
     "build-lib": "vue-cli-service build --target lib --name VueImgsPreload ./src/components/VueImgsPreload.js"
   },
-  "main": "./dist/MyFirstComponent.umd.min.js",
+  "main": "./dist/VueImgsPreload.umd.min.js",
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10"
