@@ -3,7 +3,7 @@
 ![images](https://img.shields.io/badge/vue-2.6.10-brightgreen)
 ![images](https://img.shields.io/badge/vue--cli-3.x-lightgrey)
 
-> 一个简单的图片预加载组件，提高简单的百分比预加载页面
+> 一个简单的图片预加载组件，提供简单的百分比预加载页面
 
 ## Install
 
