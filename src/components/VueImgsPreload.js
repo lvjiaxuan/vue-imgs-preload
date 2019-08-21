@@ -1,6 +1,6 @@
 export default {
 
-  name: 'ImgsPreload',
+  name: 'VueImgsPreload',
 
   props: {
 
@@ -46,11 +46,7 @@ export default {
 
   created() {
 
-    if(sessionStorage.getItem('imgsLoadedAll')) {
-      this.imgsLoaded = this.imgs.length;
-    } else {
-      this.preloadImgs();
-    }
+    this.preloadImgs();
   },
 
   methods: {
@@ -74,7 +70,6 @@ export default {
 
       this.$emit('imgsLoadedAll');
       this.$emit('update:preloadVisible', false);
-      sessionStorage.setItem('imgsLoadedAll', 'imgsLoadedAll');
     }
   },
 
