@@ -31,7 +31,7 @@ export default {
 
     imgsPercentage() {
 
-      if(this.imgs.length === 0) return 0;
+      if(this.imgs.length === 0 && this.addConditionsNum === 0) return 100;
       return parseInt((this.imgsLoaded / (this.imgs.length + this.addConditionsNum)) * 100);
     }
   },

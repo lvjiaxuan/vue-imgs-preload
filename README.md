@@ -79,7 +79,9 @@ export default {
   methods: {
     
     init() {
-      setTimeout(() => this.$refs['imgs-preload'].imgsLoaded++, 1000);
+      setTimeout(() => {
+        // this.addConditionsNum-- or this.$refs['imgs-preload'].imgsLoaded++
+      }, 1000);
     },
     
     imgsLoadedAll() {

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     
-    <vue-imgs-preload ref="imgs-preload" class="imgs-preload-wrap" :imgs="imgs" :preload-visible.sync="preloadVisible">
+    <vue-imgs-preload ref="imgs-preload" class="imgs-preload-wrap" :imgs="imgs" :preload-visible.sync="preloadVisible" :add-conditions-num="addConditionsNum">
       <template #default="{ imgsPercentage }">{{ imgsPercentage }}%</template>
     </vue-imgs-preload>
 
@@ -27,8 +27,14 @@ export default {
     return {
 
       imgs: [require('@/assets/logo.png')],
-      preloadVisible: true
+      preloadVisible: true,
+      addConditionsNum: 1
     }
+  },
+
+  created() {
+
+    setTimeout(() => this.addConditionsNum--, 1000)
   }
 }
 </script>
